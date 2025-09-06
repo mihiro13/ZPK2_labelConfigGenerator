@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ZPK2 Label Config Generator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="container">
+            <img id="screen" src="images/gui.png" alt="minecraft screen">
+            <div class="label" id="x">X:</div>
+            <div class="label" id="y">Y:</div>
+            <div class="label" id="z">Z:</div>
+            <div class="label" id="pitch">Pitch:</div>
+            <div class="label" id="yaw">F:</div>
+            <div class="label" id="ja">Jump Angle:</div>
+            <div class="label" id="ha">Hit Angle:</div>
+            <div class="label" id="secondTurn">Second Turn:</div>
+            <div class="label" id="preturn">Preturn:</div>
+            <div class="label" id="lastTurning">Last Turning:</div>
+            <div class="label" id="landx">Last Landing X:</div>
+            <div class="label" id="landy">Last Landing Y:</div>
+            <div class="label" id="landz">Last Landing Z:</div>
+            <div class="label" id="hitx">Hit X:</div>
+            <div class="label" id="hity">Hit Y:</div>
+            <div class="label" id="hitz">Hit Z:</div>
+            <div class="label" id="jumpx">Jump X:</div>
+            <div class="label" id="jumpz">Jump Z:</div>
+            <div class="label" id="speedx">X Speed:</div>
+            <div class="label" id="speedy">Y Speed:</div>
+            <div class="label" id="speedz">Z Speed:</div>
+            <div class="label" id="speedVector">Speed Vector:</div>
+            <div class="label" id="tier">Tier:</div>
+            <div class="label" id="airtime">Airtime:</div>
+            <div class="label" id="grind">Grind</div>
+            <div class="label" id="mmx">MM X Offset:</div>
+            <div class="label" id="mmz">MM Z Offset:</div>
+            <div class="label" id="offset">Offset:</div>
+            <div class="label" id="offsetx">X Offset:</div>
+            <div class="label" id="offsetz">Z Offset:</div>
+            <div class="label" id="pb">PB:</div>
+            <div class="label" id="pbx">X PB:</div>
+            <div class="label" id="pbz">Z PB:</div>
+            <div class="label" id="lastInput">Last Input:</div>
+            <div class="label" id="lastSidestep">Last Sidestep:</div>
+            <div class="label" id="lastTiming">Last Timing:</div>
+            <div class="label" id="time">Time:</div>
+        </div>
+        <div class="control-group">
+            <label for="showShadowToggle">
+                <span>Show Shadow(影をつけると重くなります):</span>
+                <div class="toggle-switch">
+                    <input type="checkbox" id="showShadowToggle" checked>
+                    <span class="slider round"></span>
+                </div>
+            </label>
+        </div>
+        <div class="button-group">
+            <button id="importBtn">Import</button>
+            <input type="file" id="fileInput" accept=".json"
+                style="display: none;">
+            <button id="exportBtn">Export</button>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
