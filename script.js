@@ -166,14 +166,15 @@ document.addEventListener('DOMContentLoaded', () => {
         config['$showShadow'] = showShadowToggle.checked;
 
         const jsonString = JSON.stringify(config, null, 2);
-        configOutput.textContent = jsonString;
 
         const blob = new Blob([jsonString], { type: 'application/json' });
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;
         a.download = requiredFileName;
+        document.body.appendChild(a); // DOMに追加
         a.click();
+        document.body.removeChild(a); // DOMから削除
         URL.revokeObjectURL(url);
     });
 });
