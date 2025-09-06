@@ -28,6 +28,7 @@ body {
     height: 100%;
     display: block;
     object-fit: contain;
+    pointer-events: none;
 }
 
 .label {
@@ -35,10 +36,9 @@ body {
     cursor: grab;
     background-color: transparent;
     border: none;
-    padding: 0; /* パディングを削除してサイズを文字だけに */
+    padding: 0;
     user-select: none;
     color: #FFA000;
-    /* フォントサイズを大きくし、1pxを1文字ピクセルに対応させる */
     font-size: 1.27vw;
     text-shadow: 2px 2px #000;
     white-space: nowrap;
